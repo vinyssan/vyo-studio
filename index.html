@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>VYO Studio — Portfólio · Fotografia e filmes</title>
+<meta name="description" content="Portfólio de Vinícius Oliveira, fotógrafo e filmmaker: casamentos, ensaio gestante, chá de bebê, igreja e eventos.">
+<meta name="theme-color" content="#1B1A17">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/brand/favicon.png">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/glass.css">
+<link rel="stylesheet" href="assets/css/portfolio.css">
+<link rel="stylesheet" href="assets/css/recorte.css">
+<link rel="stylesheet" href="assets/css/tema-creme.css">
+</head>
+<body class="pf">
+<a class="skip" href="#main">Ir para o conteúdo</a>
+
+<div class="stage" id="stage">
+
+  <!-- barra: logo + abas -->
+  <header class="bar" id="bar">
+    <a class="bar__logo" href="#inicio" aria-label="VYO Studio, voltar à capa"><img src="assets/brand/vyo-simbolo-branco.png" alt="" width="40" height="37"></a>
+    <nav class="tabs glass glass--pill" aria-label="Seções do portfólio">
+      <a href="#perfil">Perfil</a>
+      <a href="#projetos">Entregas</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ 01 CAPA ============ -->
+    <section class="scr scr--capa" id="inicio" aria-labelledby="t-capa">
+      <h1 id="t-capa" class="sr-only" tabindex="-1">Portfólio — Vinícius Oliveira, fotógrafo e filmmaker</h1>
+      <div class="cv__aura" aria-hidden="true"></div>
+      <div class="cv__halo" aria-hidden="true"></div>
+      <!-- 1) palavra cheia, atrás do retrato -->
+      <div class="cv__layer cv__layer--fill" aria-hidden="true"><div class="cv__word"><span><b>Port</b><b>fólio</b></span></div></div>
+      <!-- 2) retrato recortado -->
+      <img class="cv__cut" src="assets/img/sobre/vinicius-bw-recorte.webp" width="1004" height="1250" alt="Retrato em preto e branco de Vinícius Oliveira, fotógrafo e filmmaker, de perfil" fetchpriority="high">
+      <!-- 3) mesma palavra só em contorno, visível apenas sobre o retrato -->
+      <div class="cv__layer cv__layer--line" aria-hidden="true"><div class="cv__word"><span><b>Port</b><b>fólio</b></span></div></div>
+      <div class="cv__foot">
+        <div class="cv__meta"><span class="rise" style="--i:6">Vinícius Oliveira · Fotógrafo e filmmaker</span></div>
+        <div class="cv__bar rise" style="--i:8"><span>Fotografia</span><i></i><span>Filmes</span></div>
+      </div>
+      <svg class="cv__curve" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90V46C260 -6 520 -6 720 8s700 36 720 38v44z"/></svg>
+    </section>
+
+    <!-- ============ 02 PERFIL ============ -->
+    <section class="scr scr--perfil" id="perfil" data-screen="perfil" aria-labelledby="t-perfil">
+      <div class="scr__scroll">
+        <div class="perfil">
+          <div class="perfil__who">
+            <p class="eyebrow mask"><span style="--i:0">Olá, eu sou</span></p>
+            <h2 class="name mask" id="t-perfil" tabindex="-1"><span style="--i:1">Vinícius<br>Oliveira</span></h2>
+            <div class="portrait" style="--i:2">
+              <div class="portrait__glow" aria-hidden="true"></div>
+              <img src="assets/img/sobre/vinicius-escuro-1000.webp" srcset="assets/img/sobre/vinicius-escuro-640.webp 427w, assets/img/sobre/vinicius-escuro-1000.webp 667w, assets/img/sobre/vinicius-escuro-1400.webp 933w" sizes="(max-width:860px) 70vw,30vw" width="667" height="1000" class="portrait__img" alt="Retrato de Vinícius Oliveira" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="perfil__info">
+            <h3 class="h mask"><span style="--i:1">Sobre mim</span></h3>
+            <p class="about rise" style="--i:2">Sou Vinícius Oliveira, fotógrafo e filmmaker. A VYO é uma variação do meu nome: a força do estúdio está na autoria e na ligação com quem cria.</p>
+            <p class="about rise" style="--i:3">Uno experiência, técnica e sensibilidade para criar imagens com intenção, narrativa e qualidade de entrega. Profissional na execução, próximo no relacionamento.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 PROJETOS ============ -->
+    <section class="scr scr--projetos" id="projetos" data-screen="projetos" aria-labelledby="t-proj">
+      <div class="scr__scroll">
+        <div class="proj">
+          <div class="proj__head">
+            <h2 class="title mask" id="t-proj" tabindex="-1"><span style="--i:0">Entregas</span></h2>
+          </div>
+          <div class="cats rise" style="--i:2" id="chips" role="group" aria-label="Escolher categoria"></div>
+          <div class="mosaic" id="mosaic"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 CONTATO ============ -->
+    <section class="scr scr--contato" id="contato" data-screen="contato" aria-labelledby="t-contato">
+      <div class="scr__scroll">
+        <div class="contato">
+          <div class="contato__who">
+            <h2 class="h2 mask" id="t-contato" tabindex="-1"><span style="--i:0">Fale comigo</span></h2>
+            <div class="avatar rise" style="--i:1">
+              <img src="assets/img/sobre/vinicius-sorriso-640.webp" srcset="assets/img/sobre/vinicius-sorriso-640.webp 427w, assets/img/sobre/vinicius-sorriso-1000.webp 667w, assets/img/sobre/vinicius-sorriso-1400.webp 933w" sizes="240px" width="427" height="640" class="avatar__img" alt="Vinícius Oliveira sorrindo" loading="lazy" decoding="async">
+            </div>
+            <p class="who rise" style="--i:2"><b>Vinícius Oliveira</b><span>Fotógrafo e filmmaker</span></p>
+            <ul class="links rise" style="--i:3">
+              <li><a class="glass glass--pill" data-contact="whatsapp" data-wa="Olá, Vinícius! Vi seu portfólio da VYO Studio e gostaria de conversar." href="#/contato"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5z"/></svg>WhatsApp</a></li>
+              <li><a class="glass glass--pill" data-contact="instagram" href="#/contato"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17" cy="7" r=".6" fill="currentColor"/></svg>Instagram</a></li>
+            </ul>
+          </div>
+          <div class="contato__main">
+            <p class="thanks mask" aria-hidden="true"><span style="--i:1">Contato<br>via WhatsApp</span></p>
+            <form class="form glass rise" style="--i:4" id="form" novalidate>
+              <label for="f-nome">Seu nome</label>
+              <input id="f-nome" name="nome" autocomplete="name" required>
+              <label for="f-tipo">Tipo de trabalho</label>
+              <select id="f-tipo" name="tipo" required>
+                <option value="">Selecione</option>
+                <option>Casamento</option><option>Ensaio gestante</option><option>Chá de bebê</option><option>Igreja ou evento</option><option>Marca ou empresa</option><option>Outro</option>
+              </select>
+              <label for="f-msg">Mensagem</label>
+              <textarea id="f-msg" name="msg" rows="3" required></textarea>
+              <p class="err" id="ferr" role="alert"></p>
+              <button class="btn" type="submit">Enviar pelo WhatsApp</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- lightbox -->
+  <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+    <button class="lb__x glass glass--pill" id="lbX" aria-label="Fechar">✕</button>
+    <button class="lb__n lb__n--p glass glass--pill" id="lbP" aria-label="Foto anterior">←</button>
+    <button class="lb__n lb__n--n glass glass--pill" id="lbN" aria-label="Próxima foto">→</button>
+    <figure class="lb__fig"><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  </div>
+  <div class="toast glass glass--pill glass--strong" id="toast" role="status" aria-live="polite"></div>
+</div>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/gallery-data.js"></script>
+<script src="assets/js/portfolio.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+/* VYO Studio — TESTE de paleta "creme + grafite quente" (suave aos olhos, inspirada na referência).
+   Para voltar ao visual anterior, apague a linha que carrega este arquivo em portfolio.html
+   (ou em _tpl/portfolio.tpl.html e rode python3 _tpl/render.py). */
+:root{
+  --preto:#1B1A17;            /* grafite quente */
+  --branco:#EDEAE4;           /* branco osso */
+  --branco-80:rgba(237,234,228,.82);
+  --branco-60:rgba(237,234,228,.64);
+  --azul:#3A5273;             /* azul suavizado */
+  --terra:#B5744A;            /* terracota: acento (botões, linhas, números) */
+  --creme:#F2EADB;
+  --tinta:#1B1A17;
+}
+body.pf{background:var(--preto)}
+.stage{background:radial-gradient(70% 60% at 85% 8%,rgba(58,82,115,.42),transparent 70%),var(--preto)}
+
+/* barra: três "pílulas" escuras que funcionam sobre fundo claro e escuro */
+.bar::before{display:none}
+.bar__logo{width:46px;height:46px;display:grid;place-items:center;border-radius:50%;background:rgba(27,26,23,.86);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(237,234,228,.14)}
+.bar__logo img,.bar__logo svg{width:24px;height:auto}
+.tabs{background:rgba(27,26,23,.86)!important;border:1px solid rgba(237,234,228,.14)!important}
+.tabs a[aria-current="page"]{background:var(--creme);color:var(--tinta)}
+.bar__count{background:rgba(27,26,23,.86);padding:9px 16px;border-radius:999px;border:1px solid rgba(237,234,228,.14)}
+
+/* capa: a curva inferior vira o topo da seção creme */
+.cv__curve{fill:var(--creme)}
+.cv__bar i{background:linear-gradient(90deg,var(--terra),color-mix(in srgb,var(--azul) 70%,var(--preto)) 65%,rgba(237,234,228,.12))}
+
+/* seções claras: Perfil e Contato */
+#perfil,#contato{
+  background:var(--creme);color:var(--tinta);border-top:0;
+  --branco:#1B1A17;--branco-80:rgba(27,26,23,.82);--branco-60:rgba(27,26,23,.64);--linha:rgba(27,26,23,.16);
+}
+#perfil{background:radial-gradient(60% 50% at 8% 14%,rgba(181,116,74,.14),transparent 70%),var(--creme)}
+#contato{background:radial-gradient(60% 60% at 92% 84%,rgba(181,116,74,.14),transparent 70%),var(--creme)}
+#perfil .glass,#contato .glass{background:rgba(27,26,23,.045);border:1px solid rgba(27,26,23,.14);box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none;color:var(--tinta)}
+#perfil .glass::before,#contato .glass::before{display:none}
+#perfil .portrait__glow{background:radial-gradient(closest-side,rgba(181,116,74,.38),rgba(181,116,74,.12) 58%,transparent 76%)}
+#perfil .proc i,#perfil .svc span{color:rgba(27,26,23,.62)}
+#contato .thanks{background:none;color:var(--tinta);-webkit-text-fill-color:var(--tinta)}
+#contato .thanks--year{color:var(--terra);-webkit-text-fill-color:var(--terra)}
+#contato .avatar{box-shadow:0 0 0 8px rgba(27,26,23,.05),0 24px 50px rgba(27,26,23,.18)}
+#contato .form input,#contato .form select,#contato .form textarea{background:rgba(255,255,255,.62)}
+#contato .form input:focus,#contato .form select:focus,#contato .form textarea:focus{border-color:var(--tinta)}
+#contato .form .bad{border-color:#c2603a}
+#contato .err{color:#a2452a}
+#contato .btn{background:var(--tinta);color:var(--creme)}
+#contato .links a:hover{background:rgba(27,26,23,.09)}
+#perfil :focus-visible,#contato :focus-visible{outline-color:var(--tinta)}
+
+/* projetos continua escuro para as fotos se destacarem */
+#projetos{border-top:0}

@@ -1,0 +1,30 @@
+/* VYO Studio — tokens. Cores e tipografia seguem o MIV (Edição 01, out/2026). */
+@font-face{font-family:"Syne";src:url("../fonts/Syne-Variable.woff") format("woff");font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Manrope";src:url("../fonts/Manrope-Variable.woff") format("woff");font-weight:200 800;font-style:normal;font-display:swap}
+
+:root{
+  /* paleta institucional (as únicas 4 cores) */
+  --preto:#0B0B0B;
+  --branco:#FFFFFF;
+  --azul:#2F4568;
+  --terra:#8B6F56;
+
+  /* derivados por mistura/opacidade, para degradês e vidro */
+  --azul-fundo:color-mix(in srgb,var(--azul) 55%,var(--preto));
+  --branco-80:rgba(255,255,255,.80);
+  --branco-60:rgba(255,255,255,.66);
+  --linha:rgba(255,255,255,.14);
+  --terra-glow:rgba(139,111,86,.22);
+  --azul-glow:rgba(47,69,104,.55);
+
+  --f-titulo:"Syne",system-ui,sans-serif;
+  --f-texto:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+
+  --ease:cubic-bezier(.22,.8,.2,1);
+  --t-micro:180ms;--t-base:450ms;--t-sec:800ms;
+
+  --container:1320px;
+  --gutter:24px;
+  --r-card:24px;--r-img:16px;
+}
+@media (min-width:900px){:root{--gutter:48px}}
